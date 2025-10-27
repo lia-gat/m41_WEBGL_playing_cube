@@ -85,8 +85,8 @@
 				var textureLoader = new THREE.TextureLoader();
 				for ( let i = 1; i <= 6; i++ ) {
 					var texture = textureLoader.load( 'https://lia-gat.github.io/m_41_WEBGL_playing_cube/textures/' + String(i) + '.png' );
-					var material = new THREE.MeshPhongMaterial( { map: texture, color: 0x00dcff } );
-					materials.push( material );
+					
+					
 				}
         		var geometry = new THREE.BoxGeometry ( 200, 200, 200 );
 				var Cube = new THREE.Mesh( geometry, materials );
@@ -94,7 +94,7 @@
 				Cube.position.y = 100;
 				scene.add( Cube );
 
-				var texture = textureLoader.load( 'https://lia-gat.github.io/m_41_WEBGL_playing_cube/textures/Sillitoe-black.jpg' );
+				var texture = textureLoader.load( 'https://lia-gat.github.io/m_41_WEBGL_playing_cube/textures/Sillitoe-black.png' );
 				texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 				texture.anisotropy = 16;
 				texture.repeat.set( 4, 4 );
